@@ -200,20 +200,27 @@
   }
 }
 
-@media (min-width: 1024px) {
-  /* Conteúdo */
-  .deals,
-  .brands {
-    max-width: 1600px;
-    margin: 0 auto;
-    gap: 20px;
-    overflow: hidden !important;
-  }
 
+@media(min-width: 1598px) {
   .infocard-container {
     display: flex;
     max-width: 1600px;
     margin: 40px auto 40px auto;
     gap: 20px;
   }
+}
+
+
+@media (min-width: 1024px) {
+  /* Conteúdo */
+  .deals,
+  .brands {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 20px;
+    overflow: hidden !important;
+  }
+
 }
