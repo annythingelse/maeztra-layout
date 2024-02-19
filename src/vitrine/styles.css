@@ -1,0 +1,19 @@
+.vitrine-container {
+  max-width: 1600px;
+  margin: 30px auto 20px auto;
+}
+
+.vitrine-container .swiper-button-prev,
+.vitrine-container .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 0px) !important;
+}
+
+.vitrine-container .swiper-button-next,
+.vitrine-container .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 0px) !important;
+}
+
+.vitrine-container .swiper-button-prev,
+.vitrine-container .swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 42%) !important;
+}

@@ -1,0 +1,68 @@
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+}
+
+.bm-burger-bars {
+  display: none;
+}
+
+#react-burger-menu-btn {
+  background: url("../assets/mobile/icon-menu.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-item-list {
+  color: #353535;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+
+  color: #353535;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #faa500;
+  font-weight: 700;
+}
+
+.menu-item-novidades a {
+  color: #faa500;
+  font-weight: 700;
+}
+
+.bm-overlay {
+  top: 0;
+  background: #000000b2;
+}
