@@ -170,7 +170,8 @@
 }
 
 .infocard-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   text-align: left;
 }
@@ -179,8 +180,79 @@
   width: 100%;
 }
 
+/* Footer */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafafa;
+  padding: 20px;
+  gap: 20px;
+}
+
+.newsletter p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.newsletter-input-container {
+  position: relative;
+  display: flex;
+  max-width: 630px;
+  width: 100%;
+}
+
+.newsletter-input-container input {
+  width: 80%;
+  outline: none;
+  height: 40px;
+  border: 1px solid #353535;
+  border-radius: 4px;
+  padding: 0 20px;
+}
+
+.newsletter-input-container button {
+  position: absolute;
+  right: 1px;
+  top: 0;
+  width: 20%;
+  height: 42px;
+
+  border: none;
+  border-radius: 4px;
+  padding: 0 20px;
+  background: #faa500;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.creditos-container {
+  background: #353535;
+  padding: 20px 0;
+}
+
+.creditos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media,
+.cards,
+.creditos {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media,
+.cards {
+  justify-content: center;
+}
+
 @media (max-width: 1598px) {
-  /* header */
   .sticky-header {
     gap: 20px;
     padding: 20px;
@@ -200,27 +272,46 @@
   }
 }
 
+@media (min-width: 1598px) {
+  .deals img,
+  .brands img {
+    width: 100%;
+  }
 
-@media(min-width: 1598px) {
   .infocard-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 1600px;
     margin: 40px auto 40px auto;
-    gap: 20px;
+  }
+
+  .infocard-container p {
+    max-width: 420px;
+  }
+
+  .creditos-content {
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
-
 @media (min-width: 1024px) {
-  /* Conteúdo */
   .deals,
   .brands {
-    flex-wrap: wrap;
-    justify-content: center;
     max-width: 1600px;
     margin: 0 auto;
     gap: 20px;
     overflow: hidden !important;
   }
+}
 
+@media (min-width: 1024px) and (max-width: 1598px) {
+  .deals,
+  .brands {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

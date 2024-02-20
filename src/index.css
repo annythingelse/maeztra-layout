@@ -10,3 +10,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h2,
+h4 {
+  color: #353535;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+  }
+}

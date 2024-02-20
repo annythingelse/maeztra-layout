@@ -3,7 +3,8 @@ import "./App.css";
 import { useMediaQuery } from "react-responsive";
 import Sidebar from "./menu/Sidebar.js";
 import Slider from "./slider/slide.js";
-import Vitrine from "./vitrine/slide.js";
+import VitrineDesktop from "./vitrine/desktop/slide.js";
+import VitrineMobile from "./vitrine/mobile/slide.js";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -194,7 +195,8 @@ function App() {
           </div>
         </div>
         <div className="vitrine-container">
-          <Vitrine />
+          <h2>As Mais Pedidas</h2>
+          {isMobile ? <VitrineMobile /> : <VitrineDesktop />}
         </div>
         <div className="infocard-container">
           <div className="infocard-description">
@@ -219,6 +221,101 @@ function App() {
           />
         </div>
       </main>
+      <footer>
+        <div className="newsletter">
+          <p>Recebe Nossa Newsletter</p>
+          <div className="newsletter-input-container">
+            <input name="newsletter" />
+            <button>Enviar</button>
+          </div>
+        </div>
+        <div className="footer-menu">
+          <div>
+            <p>Informações</p>
+            <a href="/" className="footer-menu-item">
+              Quem Somos
+            </a>
+            <a href="/" className="footer-menu-item">
+              Prazo de Envio
+            </a>
+            <a href="/" className="footer-menu-item">
+              Trocas e Devoluções
+            </a>
+            <a href="/" className="footer-menu-item">
+              Promoções e Cupons
+            </a>
+          </div>
+          <div>
+            <p>Minha Conta</p>
+            <a href="/" className="footer-menu-item">
+              Minha Conta
+            </a>
+            <a href="/" className="footer-menu-item">
+              Meus Pedidos
+            </a>
+            <a href="/" className="footer-menu-item">
+              Cadastre-se
+            </a>
+          </div>
+          <div>
+            <p>Onde nos Encontrar</p>
+            <a href="/" className="footer-menu-item">
+              Lojas
+            </a>
+            <a href="/" className="footer-menu-item">
+              Endereço
+            </a>
+          </div>
+        </div>
+        <div className="creditos-container">
+          <div className="creditos-content">
+            <div className="social-media">
+              <img
+                src={require("./assets/facebook.png")}
+                alt=""
+                className="facebook"
+              />
+              <img
+                src={require("./assets/linkedin.png")}
+                alt=""
+                className="linkedin"
+              />
+              <img
+                src={require("./assets/instagram.png")}
+                alt=""
+                className="instagram"
+              />
+              <img
+                src={require("./assets/youtube.png")}
+                alt=""
+                className="youtube"
+              />
+            </div>
+            <div className="cards">
+              <img src={require("./assets/visa.png")} alt="" className="visa" />
+              <img
+                src={require("./assets/mastercard.png")}
+                alt=""
+                className="mastercard"
+              />
+              <img src={require("./assets/visa.png")} alt="" className="visa" />
+              <img
+                src={require("./assets/mastercard.png")}
+                alt=""
+                className="mastercard"
+              />
+            </div>
+            <div className="creditos">
+              <img src={require("./assets/vtex.png")} alt="" className="vtex" />
+              <img
+                src={require("./assets/maeztra.png")}
+                alt=""
+                className="maeztra"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
