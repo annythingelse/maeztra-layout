@@ -5,11 +5,13 @@ import Sidebar from "./menu/Sidebar.js";
 import Slider from "./slider/slide.js";
 import VitrineDesktop from "./vitrine/desktop/slide.js";
 import VitrineMobile from "./vitrine/mobile/slide.js";
+import Modal from "./modal/modal.js";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <div className="home">
+      <Modal />
       <header className="header">
         <div className="notification-bar">
           <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
@@ -59,7 +61,7 @@ function App() {
                     />
                   </div>
                   <div className="search-bar">
-                    <input name="search-bar" />
+                    <input placeholder="O Que Você Busca?" name="search-bar" />
                     <button>Buscar</button>
                   </div>
                   <div className="sticky-header-links">
@@ -225,46 +227,8 @@ function App() {
         <div className="newsletter">
           <p>Recebe Nossa Newsletter</p>
           <div className="newsletter-input-container">
-            <input name="newsletter" />
+            <input placeholder="Digite seu e-mail" name="newsletter" />
             <button>Enviar</button>
-          </div>
-        </div>
-        <div className="footer-menu">
-          <div>
-            <p>Informações</p>
-            <a href="/" className="footer-menu-item">
-              Quem Somos
-            </a>
-            <a href="/" className="footer-menu-item">
-              Prazo de Envio
-            </a>
-            <a href="/" className="footer-menu-item">
-              Trocas e Devoluções
-            </a>
-            <a href="/" className="footer-menu-item">
-              Promoções e Cupons
-            </a>
-          </div>
-          <div>
-            <p>Minha Conta</p>
-            <a href="/" className="footer-menu-item">
-              Minha Conta
-            </a>
-            <a href="/" className="footer-menu-item">
-              Meus Pedidos
-            </a>
-            <a href="/" className="footer-menu-item">
-              Cadastre-se
-            </a>
-          </div>
-          <div>
-            <p>Onde nos Encontrar</p>
-            <a href="/" className="footer-menu-item">
-              Lojas
-            </a>
-            <a href="/" className="footer-menu-item">
-              Endereço
-            </a>
           </div>
         </div>
         <div className="creditos-container">
