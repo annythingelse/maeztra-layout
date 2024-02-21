@@ -32,12 +32,12 @@ export default function Modal() {
               </h3>
               <input placeholder="Digite seu e-mail" name="modal" />
               <button>
-                Enviar{" "}
+                Enviar
                 <img
                   src={require("../assets/modal/icon.png")}
                   alt=""
                   className="icon-button"
-                />{" "}
+                />
               </button>
             </div>
           </div>
