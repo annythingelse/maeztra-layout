@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maeztra-layout/static/css/main.36cb301f.css",
+    "main.js": "/maeztra-layout/static/js/main.b35811db.js",
+    "static/js/453.bdb2e56e.chunk.js": "/maeztra-layout/static/js/453.bdb2e56e.chunk.js",
+    "static/media/slider_main.png": "/maeztra-layout/static/media/slider_main.26e3fea8b0e8d8fe0568.png",
+    "static/media/infocard-img.png": "/maeztra-layout/static/media/infocard-img.044ae9e7dc6e77ad566d.png",
+    "static/media/image.png": "/maeztra-layout/static/media/image.a3764b597b62f92bfc61.png",
+    "static/media/slider_main-mobile.png": "/maeztra-layout/static/media/slider_main-mobile.078ebf36ee4419a3d2b9.png",
+    "static/media/vitrine-01.png": "/maeztra-layout/static/media/vitrine-01.5a2161dc1b00ac97fa3f.png",
+    "static/media/vitrine-02.png": "/maeztra-layout/static/media/vitrine-02.c8447cd60f7b3804f807.png",
+    "index.html": "/maeztra-layout/index.html",
+    "static/media/slider-next.svg": "/maeztra-layout/static/media/slider-next.1eaa85bb6b80d7bec88d.svg",
+    "static/media/slider-prev.svg": "/maeztra-layout/static/media/slider-prev.83030888e4ee25c194d8.svg",
+    "main.36cb301f.css.map": "/maeztra-layout/static/css/main.36cb301f.css.map",
+    "main.b35811db.js.map": "/maeztra-layout/static/js/main.b35811db.js.map",
+    "453.bdb2e56e.chunk.js.map": "/maeztra-layout/static/js/453.bdb2e56e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36cb301f.css",
+    "static/js/main.b35811db.js"
+  ]
+}

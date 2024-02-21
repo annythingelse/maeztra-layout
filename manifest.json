@@ -1,0 +1,8 @@
+{
+  "short_name": "Maeztra Layout",
+  "name": "Create React App Sample",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff"
+}
